@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "aquiver",
+	"version": "${version}",
+	"name": "Aquiver",
+	"description": "A quiver mod with a pretty model (hopefully) and Trinkets support (hopefully too).",
+	"authors": [
+		"Marco Aurélio"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/aquiver/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.marco.aquiver.Aquiver"
+		],
+		"client": [
+			"net.marco.aquiver.AquiverClient"
+		],
+		"fabric-datagen": [
+			"net.marco.aquiver.AquiverDataGenerator"
+		]
+	},
+	"mixins": [
+		"aquiver.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
